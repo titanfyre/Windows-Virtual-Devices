@@ -4,10 +4,9 @@ Create and control virtual USB keyboard, mouse and gamepad devices on
 Windows 10/11 x64. Define raw descriptors, endpoints and reports with a
 two-file C++17 SDK: `VirtualDevice/VirtualDevice.h` and `VirtualDevice.cpp`.
 
-**Demo 0.1.0.0 — Microsoft signing pending.** This repository currently provides
-SDK, graphical-example and installer source code. Production installers and a
-driver download will be added only after the new signed package is returned
-and validated. Do not install an unsigned build on your normal PC.
+**Demo 0.1.0.0 — Microsoft-signed kernel driver.** One hour per Windows kernel boot. Use the matching driver, SDK and installers from this edition.
+
+[Download demo ZIP](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/Windows-Virtual-Devices-0.1.0.0-Demo.zip) · [UI installer](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/WindowsVirtualDevicesSetup.exe) · [Console installer](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/WindowsVirtualDevicesSetupConsole.exe) · [SDK + source](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/Windows-Virtual-Devices-0.1.0.0-SDK.zip)
 
 [C++ API](docs/API.md) | [Graphical examples](ExamplesUI/README.md) |
 [Installation](docs/INSTALLATION.md) | [Scope and validation](docs/VALIDATION.md)
@@ -43,10 +42,11 @@ reference assemblies, then run:
 powershell -ExecutionPolicy Bypass -File .\Build.ps1
 ```
 
-The default build compiles user-mode sources and runs offline checks. While
-signing is pending it explicitly defers installer packaging. It never installs
-a driver or creates a virtual device. `-Target Installers` requires the new
-Microsoft-signed driver package and has no unsigned override.
+The default build compiles user-mode sources and runs offline checks. With the
+matching signed payload from the SDK ZIP it also builds the installers. A source-only
+checkout defers installer packaging until that payload is supplied. The build never
+installs a driver or creates a device. `-Target Installers` requires the matching
+Microsoft-signed package and has no unsigned override.
 
 The graphical examples cover a USB keyboard, mouse, Xbox 360/XInput, DualShock 4,
 Xbox One/GIP and a raw Descriptor Workshop. `--preview` opens the five native

@@ -40,4 +40,4 @@ if($Target -in @('All','ExamplesUI','Installers')){
  & (Join-Path $root 'Tests\WorkshopTests.ps1') -NativeBridge $bridge
 }
 Write-Host 'User-mode build and offline tests complete. No driver installed and no virtual device created.'
-Write-Host 'The new driver package requires Microsoft signing before production installation.'
+Write-Host 'Production installation requires the matching Microsoft-signed package.'

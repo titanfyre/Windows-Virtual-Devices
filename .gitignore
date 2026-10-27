@@ -8,3 +8,6 @@
 *.key
 *.cer
 *.pdb
+
+/InstallerUI/Package/*.sys
+/InstallerUI/Package/*.cat

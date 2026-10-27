@@ -1,10 +1,8 @@
 # Validation and supported scope
 
-WindowsVirtualDevices 0.1.0.0 is a new demo edition. Microsoft signing is pending.
-The new package identity has been exercised in disposable Hyper-V guests using
-guest-local test-signed copies. The production submission CAB was not changed
-by those tests. These checks do not replace validation of the Microsoft-signed
-return or testing on physical hardware.
+WindowsVirtualDevices 0.1.0.0 has a matching Microsoft-signed return. Its catalog memberships, unchanged INF files and protected executable content have been verified against the submitted candidate. Installer builds and offline resource/state checks pass.
+
+The live results below used guest-local test-signed copies of the same submitted image in disposable Hyper-V guests. This signed-return integration has not repeated the full installation/device lifecycle with the returned installers; physical-hardware and that final runtime validation remain pending.
 
 ## Live checks
 

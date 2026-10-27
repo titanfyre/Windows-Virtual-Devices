@@ -4,7 +4,7 @@ The five standalone native control panels cover keyboard, mouse, Xbox 360,
 DualShock 4 and Xbox One GIP. Their C++ protocol definitions and shared device
 lifecycle are included in this folder.
 Run `WindowsVirtualDevicesKeyboardUI.exe`, `WindowsVirtualDevicesMouseUI.exe`, `WindowsVirtualDevicesXbox360UI.exe`,
-`WindowsVirtualDevicesDualShock4UI.exe` or `WindowsVirtualDevicesXboxOneGipUI.exe` after the matching signed package is available. The repository currently supports offline previews and builds while signing is pending.
+`WindowsVirtualDevicesDualShock4UI.exe` or `WindowsVirtualDevicesXboxOneGipUI.exe` after installing the matching signed driver from the demo release. Offline previews and source builds are also available.
 
 Normal launches request administrator rights immediately. Click **Create device**.
 Wait for **READY**, edit fields

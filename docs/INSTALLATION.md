@@ -1,18 +1,16 @@
 # Installation status and workflow
 
-Windows Virtual Devices 0.1.0.0 is awaiting Microsoft signing. There is no
-production installer or driver download for this new identity yet. The source
-build is usable for SDK compilation, offline checks and graphical previews.
+Windows Virtual Devices 0.1.0.0 has a verified matching Microsoft-signed package. Download the [demo ZIP](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/Windows-Virtual-Devices-0.1.0.0-Demo.zip) for the installers and graphical examples, or the [SDK ZIP](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/Windows-Virtual-Devices-0.1.0.0-SDK.zip) for source and matching signed binary build inputs.
 
-After the signed package is available, the intended workflow is:
+Installation workflow:
 
 1. Run `WindowsVirtualDevicesSetup.exe`, accept elevation and choose Install.
 2. Restart Windows only if setup requests it, then reopen setup to check state.
 3. Open a graphical device example and choose Create device. Wait for READY.
 4. Edit controls and send a state. Release held inputs before disconnecting.
 
-The console installer will use `/install`, `/uninstall`, `/status` and `/diagnose`.
-It will stage only the new product's package and root controller. Installation
+The console installer uses `/install`, `/uninstall`, `/status` and `/diagnose`.
+It stages only the new product's package and root controller. Installation
 must pass Microsoft-signature and catalog-membership validation; security settings
 are never disabled. Existing Vdevice or other product services are not its targets.
 
@@ -22,7 +20,7 @@ contains `DemoSessionClock.sys`, with the product-owned
 demo allowance, shared across applications. Closing an application or reinstalling
 does not reset it.
 
-Once available, install/repair reports the PnP, service, package, API and restart
+Install/repair reports the PnP, service, package, API and restart
 states separately. A service entry alone does not establish readiness. The UI
 shows a Restart button only when required; diagnostics are read-only and do not
 create devices or start the demo allowance.
