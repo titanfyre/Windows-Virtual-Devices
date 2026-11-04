@@ -19,7 +19,7 @@ two-file C++17 SDK: `VirtualDevice/VirtualDevice.h` and `VirtualDevice.cpp`.
 
 [Download demo ZIP](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/Windows-Virtual-Devices-0.1.0.0-Demo.zip) · [UI installer](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/WindowsVirtualDevicesSetup.exe) · [Console installer](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/WindowsVirtualDevicesSetupConsole.exe) · [SDK + source](https://github.com/titanfyre/Windows-Virtual-Devices/releases/download/v0.1.0.0/Windows-Virtual-Devices-0.1.0.0-SDK.zip)
 
-[C++ API](docs/API.md) | [Graphical examples](ExamplesUI/README.md) |
+[C++ API](docs/API.md) | [Graphical examples](Examples/UI/README.md) |
 [Installation](docs/INSTALLATION.md) | [Scope and validation](docs/VALIDATION.md)
 
 ## Seven operations for every protocol

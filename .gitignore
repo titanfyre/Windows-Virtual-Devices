@@ -9,5 +9,5 @@
 *.cer
 *.pdb
 
-/InstallerUI/Package/*.sys
-/InstallerUI/Package/*.cat
+/Installer/UI/Package/*.sys
+/Installer/UI/Package/*.cat

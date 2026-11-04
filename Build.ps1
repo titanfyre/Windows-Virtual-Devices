@@ -16,7 +16,7 @@ if($LASTEXITCODE){throw 'Native compilation failed.'}
 if($LASTEXITCODE){throw 'Offline tests failed.'}
 if($Target -in @('All','Installers')){
  $helper=Join-Path $root 'bin\Native\Release\WindowsVirtualDevicesSetupNative.exe'
- $driver=Join-Path $root 'InstallerUI\Package'
+ $driver=Join-Path $root 'Installer\UI\Package'
  $required=@('WindowsVirtualDevices.inf','WindowsVirtualDevices.sys','WindowsVirtualDevices.cat','DemoSessionClock.sys')
  $missing=@($required|Where-Object {!(Test-Path -LiteralPath (Join-Path $driver $_) -PathType Leaf)})
  if($missing.Count){
@@ -29,14 +29,14 @@ if($Target -in @('All','Installers')){
     throw ('A valid Microsoft driver signature is required: '+$name)
    }
   }
-  & (Join-Path $root 'InstallerConsole\Build.ps1') -DriverDirectory $driver -NativeHelper $helper
-  & (Join-Path $root 'InstallerUI\Build.ps1') -DriverDirectory $driver -NativeHelper $helper
+  & (Join-Path $root 'Installer\Console\Build.ps1') -DriverDirectory $driver -NativeHelper $helper
+  & (Join-Path $root 'Installer\UI\Build.ps1') -DriverDirectory $driver -NativeHelper $helper
   & (Join-Path $root 'Tests\InstallerTests.ps1')
  }
 }
 if($Target -in @('All','ExamplesUI','Installers')){
  $bridge=Join-Path $root 'bin\ExamplesUI\Release\WindowsVirtualDevicesBridge.dll'
- & (Join-Path $root 'ExamplesUI\Build.ps1') -NativeBridge $bridge
+ & (Join-Path $root 'Examples\UI\Build.ps1') -NativeBridge $bridge
  & (Join-Path $root 'Tests\WorkshopTests.ps1') -NativeBridge $bridge
 }
 Write-Host 'User-mode build and offline tests complete. No driver installed and no virtual device created.'

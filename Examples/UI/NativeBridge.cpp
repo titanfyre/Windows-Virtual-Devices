@@ -14,7 +14,7 @@
 #include <string>
 #include <utility>
 #include <vector>
-#include "../VirtualDevice/VirtualDevice.h"
+#include "../../VirtualDevice/VirtualDevice.h"
 
 // Private GUI glue: every interface uses the same seven raw SDK operations.
 namespace {
