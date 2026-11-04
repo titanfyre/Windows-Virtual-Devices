@@ -46,6 +46,12 @@ into the bounded queue, not consumed by an application.
 
 ## Build the SDK and examples
 
+Demo/evaluation driver source is available; see [driver/README.md](driver/README.md) for
+build instructions and separate evaluation-source terms. Those terms apply to
+Titan-authored driver code. Third-party source licenses and existing application/SDK
+licenses remain applicable. Full/commercial implementation and private signing or
+activation material are excluded.
+
 Install Visual Studio 2022 Desktop C++, a Windows SDK, CMake and .NET Framework
 reference assemblies, then run:
 
@@ -87,8 +93,7 @@ This demo is based on Vdevice. Original MIT and third-party notices are retained
 in `LICENSE` and `licenses/NOTICE`. Selected example descriptors/protocol data
 originate from [ViGEmBus](https://github.com/nefarius/ViGEmBus) under BSD-3-Clause
 and Microsoft's MS-GIPUSB documentation. The examples are PC protocol examples,
-not complete console firmware replicas. Kernel source is private and excluded
-from this repository; driver binaries have separate distribution terms.
+not complete console firmware replicas. Demo driver source is documented in [driver/README.md](driver/README.md); full/commercial implementation is excluded; driver binaries have separate distribution terms.
 
 For physical input interception, see
 [Windows Input Filter](https://github.com/titanfyre/Windows-Input-Filter).
