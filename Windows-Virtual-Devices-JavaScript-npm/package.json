@@ -1,0 +1,33 @@
+{
+  "name": "windows-virtual-devices",
+  "version": "1.0.0",
+  "description": "Direct Windows x64 Windows-Virtual-Devices JavaScript and TypeScript SDK",
+  "license": "MIT",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "prebuilds/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/titanfyre/Windows-Virtual-Devices.git",
+    "directory": "Windows-Virtual-Devices-JavaScript-npm"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
