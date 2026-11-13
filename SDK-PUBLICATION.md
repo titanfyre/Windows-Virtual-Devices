@@ -2,30 +2,30 @@
 
 Projet : [Windows-Virtual-Devices](https://github.com/titanfyre/Windows-Virtual-Devices). [Sources et documentation des SDK](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Windows-Virtual-Devices).
 
-Choisis la ligne correspondant au langage de ton application. Installe son outil habituel (Node.js/npm, Python/pip, .NET, etc.), puis execute la commande dans le dossier de ton application. Les pilotes et applications requis restent a installer separement selon le README du projet.
+Choisis le paquet a installer. Installe son outil habituel (Node.js/npm, Python/pip, .NET, etc.), puis execute la commande dans le dossier de ton application. Les pilotes et applications requis restent a installer separement selon le README du projet.
 
 Les SDK natifs sont destines a Windows x64. Java utilise Java22+ (Kotlin passe par le SDK Java). Flutter utilise le SDK Dart ; le chargement de la DLL doit etre configure dans l application. AutoHotInterceptor .NET utilise .NET Framework4.8.
 
-| Langage / registre | Disponibilite | Installation / utilisation |
-| --- | --- | --- |
-| C++ / vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install windows-virtual-devices:x64-windows` |
-| C++ / Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=windows-virtual-devices/0.1.0 -r titancsa --build=missing -s compiler.cppstd=17` |
-| C++ / NuGet natif | Publie et verifie | `Install-Package Windows-Virtual-Devices.Native -Version 0.1.0` |
-| C# / .NET | Publie et verifie | `dotnet add package WindowsVirtualDevices.SDK --version 1.0.0` |
-| Python / pip | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install windows-virtual-devices==1.0.0` |
-| Python / Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge windows-virtual-devices` |
-| Rust / Cargo | Publie et verifie | `cargo add windows-virtual-devices@1.0.0` |
-| JavaScript et TypeScript / npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install windows-virtual-devices@1.0.0` |
-| Java et Kotlin / Maven Central | Publie et verifie | `io.github.titancsa:windows-virtual-devices:1.0.0 (pom.xml / Gradle)` |
-| Java et Kotlin / JitPack | Publie et verifie | `com.github.titanfyre:Windows-Virtual-Devices:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go / Go Modules | Publie et verifie | `go get github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
-| Go / pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
-| PowerShell / Gallery | Publie et verifie | `Install-Module WindowsVirtualDevices -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| Dart et Flutter / pub.dev | Pas encore disponible / validation en cours | Commande prevue apres publication : `dart pub add windows_virtual_devices:1.0.0` |
-| Ruby / RubyGems | Publie et verifie | `gem install windows-virtual-devices -v 1.0.0` |
-| PHP / Composer | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/windows-virtual-devices:1.0.0` |
+| Paquet | Registre | Disponibilite | Installation / utilisation |
+| --- | --- | --- | --- |
+| `windows-virtual-devices` | vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install windows-virtual-devices:x64-windows` |
+| `windows-virtual-devices` | Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=windows-virtual-devices/0.1.0 -r titancsa --build=missing -s compiler.cppstd=17` |
+| `Windows-Virtual-Devices.Native` | NuGet | Publie et verifie | `Install-Package Windows-Virtual-Devices.Native -Version 0.1.0` |
+| `WindowsVirtualDevices.SDK` | NuGet | Publie et verifie | `dotnet add package WindowsVirtualDevices.SDK --version 1.0.0` |
+| `windows_virtual_devices` | PyPI | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install windows-virtual-devices==1.0.0` |
+| `windows-virtual-devices` | Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge windows-virtual-devices` |
+| `windows_virtual_devices` | crates.io | Publie et verifie | `cargo add windows-virtual-devices@1.0.0` |
+| `windows_virtual_devices` | npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install windows-virtual-devices@1.0.0` |
+| `io.github.titancsa:windows-virtual-devices` | Maven Central | Publie et verifie | `io.github.titancsa:windows-virtual-devices:1.0.0 (pom.xml / Gradle)` |
+| `com.github.titanfyre:Windows-Virtual-Devices` | JitPack | Publie et verifie | `com.github.titanfyre:Windows-Virtual-Devices:java-sdk-v1.0.0 (avec le depot JitPack)` |
+| `github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules` | Go Modules | Publie et verifie | `go get github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
+| `github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules` | pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
+| `windows_virtual_devices` | PowerShell Gallery | Publie et verifie | `Install-Module WindowsVirtualDevices -RequiredVersion 1.0.0 -Scope CurrentUser` |
+| `windows_virtual_devices` | pub.dev | Pas encore disponible / validation en cours | Commande prevue apres publication : `dart pub add windows_virtual_devices:1.0.0` |
+| `windows_virtual_devices` | RubyGems | Publie et verifie | `gem install windows-virtual-devices -v 1.0.0` |
+| `windows_virtual_devices` | Packagist | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/windows-virtual-devices:1.0.0` |
 
-## C et C++
+## Configuration vcpkg et Conan
 
 Les sources et headers C / C++ sont dans le dossier central de ce projet. Les headers C se trouvent dans les dossiers `*-C-ffi` ou `*-C-json` (Interceptor-MultiLang : `native/`). Les paquets natifs C++ et la disponibilite du bridge C sont distincts ; consulte leur README avant de lier une application C.
 
@@ -56,7 +56,7 @@ conan remote add titancsa ./sdk-packages/conan-index -t local-recipes-index
 
 Execute ensuite la commande Conan du tableau. Ce registre construit les bibliotheques depuis leurs sources ; il est distinct de ConanCenter. La commande NuGet native s execute dans la console du gestionnaire de packages de Visual Studio.
 
-## Java et Kotlin
+## Configuration Maven et JitPack
 
 Dans le bloc `<dependencies>` de ton `pom.xml` :
 
