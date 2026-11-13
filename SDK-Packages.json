@@ -12,6 +12,76 @@
         ]
       },
       "distribution": "Shared native source; registry publication is reported separately below"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-C-ffi",
+      "distribution": "Native C ABI adapter to the original project SDK",
+      "dll": "WindowsVirtualDevicesJsonSDK.dll",
+      "api_prefix": "windows_virtual_devices_json_"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-Python-pypi",
+      "language": "Python",
+      "registry": "pypi",
+      "name": "windows-virtual-devices",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-Ruby-rubygems",
+      "language": "Ruby",
+      "registry": "rubygems",
+      "name": "windows-virtual-devices",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-Go-modules",
+      "language": "Go",
+      "registry": "modules",
+      "name": "windows-virtual-devices",
+      "version": "v1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-Rust-cargo",
+      "language": "Rust",
+      "registry": "cargo",
+      "name": "windows-virtual-devices",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-Java-maven",
+      "language": "Java",
+      "registry": "maven",
+      "name": "windows-virtual-devices",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-Dart-pub-dev",
+      "language": "Dart",
+      "registry": "pub-dev",
+      "name": "windows_virtual_devices",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-NET-nuget",
+      "language": "NET",
+      "registry": "nuget",
+      "name": "WindowsVirtualDevices.SDK",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
+    },
+    {
+      "directory": "Windows-Virtual-Devices-PowerShell-gallery",
+      "language": "PowerShell",
+      "registry": "gallery",
+      "name": "WindowsVirtualDevices",
+      "version": "1.0.0",
+      "distribution": "Documented native SDK; registry receipt tracked independently"
     }
   ],
   "notes": "Registry accounts or community acceptance are separate. No missing language binding is represented as implemented.",

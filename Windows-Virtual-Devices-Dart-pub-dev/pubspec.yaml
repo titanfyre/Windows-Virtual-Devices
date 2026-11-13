@@ -1,0 +1,9 @@
+name: windows_virtual_devices
+description: Direct Windows x64 Windows-Virtual-Devices SDK with native operations and exact uint64 identifiers.
+version: 1.0.0
+homepage: https://github.com/titanfyre/Windows-Virtual-Devices
+repository: https://github.com/titanfyre/Windows-Virtual-Devices
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+platforms:
+  windows:
