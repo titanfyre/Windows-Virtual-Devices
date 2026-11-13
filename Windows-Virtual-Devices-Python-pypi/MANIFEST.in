@@ -1,3 +1,0 @@
-include README.md LICENSE
-recursive-include windows_virtual_devices *.py *.dll
-recursive-include docs *
