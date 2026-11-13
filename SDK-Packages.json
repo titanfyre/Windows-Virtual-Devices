@@ -203,7 +203,7 @@
       "api_prefix": "windows_virtual_devices_json_"
     },
     "JavaScript/npm": {
-      "status": "awaiting_browser_publication_authentication",
+      "status": "registry_publication_requires_action",
       "name": "windows-virtual-devices",
       "version": "1.0.0",
       "directory": "Windows-Virtual-Devices-JavaScript-npm",

@@ -11,7 +11,7 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Python/pypi | built_fixture_and_production_verified | windows-virtual-devices [Source](Windows-Virtual-Devices-Python-pypi/) |
 | Python/conda-forge | custom_channel_install_verified_requires_conda_forge_review | [windows-virtual-devices](https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel) [Source](packaging/conda/) |
 | Rust/cargo | published_install_verified | [windows-virtual-devices](https://crates.io/crates/windows-virtual-devices) [Source](Windows-Virtual-Devices-Rust-cargo/) |
-| JavaScript/npm | awaiting_browser_publication_authentication | [windows-virtual-devices](https://www.npmjs.com/package/windows-virtual-devices) [Source](Windows-Virtual-Devices-JavaScript-npm/) |
+| JavaScript/npm | registry_publication_requires_action | [windows-virtual-devices](https://www.npmjs.com/package/windows-virtual-devices) [Source](Windows-Virtual-Devices-JavaScript-npm/) |
 | Java/maven | published_install_verified | [windows-virtual-devices](https://central.sonatype.com/artifact/io.github.titancsa/windows-virtual-devices/1.0.0) [Source](Windows-Virtual-Devices-Java-maven/) |
 | Java/jitpack | published_install_verified | [windows-virtual-devices](https://jitpack.io/#titanfyre/Windows-Virtual-Devices/java-sdk-v1.0.0) [Source](Windows-Virtual-Devices-Java-maven/) |
 | Go/modules | published_install_verified | [windows-virtual-devices](https://pkg.go.dev/github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0) [Source](Windows-Virtual-Devices-Go-modules/) |
