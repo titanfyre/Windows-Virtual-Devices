@@ -1,8 +1,6 @@
 # Windows-Virtual-Devices .NET8 SDK
 
-Package ID `WindowsVirtualDevices.SDK`. NuGet upload remains on hold at owner request.
-
-```csharp
+Package ID `WindowsVirtualDevices.SDK`. ```csharp
 using var client=new TitanCSA.Products.WindowsVirtualDevices.Client();
 string statusJson=client.Call("status", "{}");
 ```
