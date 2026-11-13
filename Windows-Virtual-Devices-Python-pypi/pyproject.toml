@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools>=77","wheel>=0.43"]
+build-backend="setuptools.build_meta"
+[project]
+name="windows-virtual-devices"
+version="1.0.0"
+description="Windows x64 Windows-Virtual-Devices direct SDK"
+requires-python=">=3.10"
+license="MIT"
+readme="README.md"
+[project.urls]
+Repository="https://github.com/titanfyre/Windows-Virtual-Devices"
+[tool.setuptools]
+packages=["windows_virtual_devices"]
+[tool.setuptools.package-data]
+windows_virtual_devices=["*.dll"]
+[tool.setuptools.data-files]
+"share/windows-virtual-devices/docs"=["docs/*","LICENSE"]
