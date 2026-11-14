@@ -21,7 +21,7 @@ Les SDK natifs sont destines a Windows x64. Java utilise Java22+ (Kotlin passe p
 | Go Modules | `github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules` | `go get github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
 | pkg.go.dev | `github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
 | PowerShell Gallery | `windows_virtual_devices` | `Install-Module WindowsVirtualDevices -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `windows_virtual_devices` | Commande prevue apres publication : `dart pub add windows_virtual_devices:1.0.0` |
+| pub.dev | `windows_virtual_devices` | `dart pub add windows_virtual_devices:1.0.0` |
 | RubyGems | `windows_virtual_devices` | `gem install windows-virtual-devices -v 1.0.0` |
 | Packagist | `windows_virtual_devices` | Commande prevue apres publication : `composer require titancsa/windows-virtual-devices:1.0.0` |
 

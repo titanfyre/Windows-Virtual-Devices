@@ -239,14 +239,14 @@
       "api_prefix": "windows_virtual_devices_json_"
     },
     "Dart/pub-dev": {
-      "status": "built_fixture_and_production_verified",
+      "status": "published_install_verified",
       "name": "windows_virtual_devices",
       "version": "1.0.0",
       "directory": "Windows-Virtual-Devices-Dart-pub-dev",
-      "registry_published": false,
+      "registry_published": true,
       "documentation_bundled": true,
-      "url": null,
-      "public_consumer_verified": false,
+      "url": "https://pub.dev/packages/windows_virtual_devices",
+      "public_consumer_verified": true,
       "module": "windows_virtual_devices",
       "dll_name": "WindowsVirtualDevicesJsonSDK.dll",
       "api_prefix": "windows_virtual_devices_json_"
