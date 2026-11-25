@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Make Windows see a virtual USB device from your app.
 
-**Start here.** Use the matching driver and try an included device example first.
+[First steps](#first-steps) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Use the matching driver and try an included device example first.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
@@ -110,32 +114,11 @@ The software is provided "AS IS", without warranties to the extent permitted
 by law. Existing licenses and liability terms remain applicable.
 
 <!-- central-sdk-packages:start -->
-## Paquets et installation
+<a name="paquets-et-installation"></a>
 
-Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Windows-Virtual-Devices). Choisis le paquet a installer puis execute sa commande dans son dossier.
+## SDK and packages
 
-| Registre | Paquet | Installation / utilisation |
-| --- | --- | --- |
-| vcpkg | `windows-virtual-devices` | `vcpkg install windows-virtual-devices:x64-windows` |
-| Conan | `windows-virtual-devices` | `conan install --requires=windows-virtual-devices/0.1.0 -r titancsa --build=missing -s compiler.cppstd=17` |
-| NuGet | `Windows-Virtual-Devices.Native` | `Install-Package Windows-Virtual-Devices.Native -Version 0.1.0` |
-| NuGet | `WindowsVirtualDevices.SDK` | `dotnet add package WindowsVirtualDevices.SDK --version 1.0.0` |
-| PyPI | `windows-virtual-devices` | Commande prevue apres publication : `python -m pip install windows-virtual-devices==1.0.0` |
-| Conda | `windows-virtual-devices` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge windows-virtual-devices` (canal TitanCSA) |
-| crates.io | `windows-virtual-devices` | `cargo add windows-virtual-devices@1.0.0` |
-| npm | `windows-virtual-devices` | Commande prevue apres publication : `npm install windows-virtual-devices@1.0.0` |
-| Maven Central | `io.github.titancsa:windows-virtual-devices` | `io.github.titancsa:windows-virtual-devices:1.0.0 (pom.xml / Gradle)` |
-| JitPack | `com.github.titanfyre:Windows-Virtual-Devices` | `com.github.titanfyre:Windows-Virtual-Devices:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go Modules | `github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules` | `go get github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
-| pkg.go.dev | `github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Windows-Virtual-Devices/Windows-Virtual-Devices-Go-modules@v1.0.0` |
-| PowerShell Gallery | `WindowsVirtualDevices` | `Install-Module WindowsVirtualDevices -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `windows_virtual_devices` | `dart pub add windows_virtual_devices:1.0.0` |
-| RubyGems | `windows-virtual-devices` | `gem install windows-virtual-devices -v 1.0.0` |
-| Packagist | `titancsa/windows-virtual-devices` | `composer require titancsa/windows-virtual-devices:1.0.0` |
-
-Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Windows-Virtual-Devices/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
-
-Les anciens imports Go et versions JitPack gardent leurs tags. Pour les anciennes archives SDK, utilise [les liens de remplacement](https://github.com/TitanCSA/sdk-packages/blob/main/release-assets/URL-MIGRATION.json).
+Choose a language in the [SDK and package guide](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Windows-Virtual-Devices#readme) for exact install commands and examples. If your example requires a driver or app, install it separately.
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
